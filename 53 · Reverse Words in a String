@@ -1,0 +1,12 @@
+class Solution:
+    """
+    @param: s: A string
+    @return: A string
+    """
+    def reverseWords(self, s):
+        # write your code here
+        if s == None: return s
+        stringList = s.split()
+        reverseString = stringList[::-1]
+        reverseString = " ".join(reverseString)
+        return reverseString
